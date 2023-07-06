@@ -1,8 +1,9 @@
 from flask import Flask, request, render_template
 import openai
+from config import PYTHON_APP_API_KEY
 
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = PYTHON_APP_API_KEY
 
 
 @app.route("/")
